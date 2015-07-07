@@ -1,0 +1,16 @@
+<div ng-controller="ViewTriggerContentCtrl">
+	
+	<div class="headerTitle">
+		<p> List of content words related to the trigger : <span class="boldTitle"> {{ triggerDetail[0].triggerName }} </span> </p>
+	</div>
+	
+	<ul>
+        <li ng-repeat="content in triggerDetail[0].triggerContent">
+        	{{ $index + 1 }}&nbsp; - &nbsp; <span class="item"> {{ content }} </span>
+        </li>
+    </ul>
+
+    <a href="#/viewTriggerName/">
+    	<p class="centerAlign"> Go back to triggers list </p>
+    </a>
+</div>
